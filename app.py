@@ -1,3 +1,6 @@
+#Sorry this code has some issue so, don't use this 
+#. i am fix it Soon...
+
 import numpy as np
 from flask import Flask, request, render_template
 import pickle
