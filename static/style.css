@@ -7,90 +7,83 @@ body {
     align-items: center;
     height: 100vh;
     margin: 0;
-    overflow: auto;
-    padding-top: 150px;
+    overflow: hidden;
 }
 
 .container {
-    background: rgba(79, 69, 192, 0.8); /* Adjust the last value (0.8) for more transparency */
-    padding: 25px;
+    background: rgba(79, 69, 192, 0.85);
+    padding: 30px;
     border-radius: 12px;
     box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
     text-align: center;
-    width: 490px;
-    transform: perspective(1000px) rotateX(5deg);
-    margin: 100px 0 20px;
+    width: 850px;
+    max-height: 95vh;
+    overflow-y: auto;
 }
-
-
-/* .container {
-    background: #5a189a;
-    padding: 25px;
-    border-radius: 12px;
-    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
-    text-align: center;
-    width: 490px;
-    transform: perspective(1000px) rotateX(5deg);
-    margin: 100px 0 20px;
-} */
 
 h1 {
     color: #f8f9fa;
-    margin-bottom: 20px;
+    margin-bottom: 25px;
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
     font-weight: 700;
     letter-spacing: 2px;
+    font-size: 28px;
 }
 
-form {
+.form-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    margin-bottom: 15px;
+}
+
+.form-group {
+    flex: 1;
     display: flex;
     flex-direction: column;
 }
 
 label {
-    font-size: 16px;
-    margin: 12px 0 6px;
-    text-align: left;
+    font-size: 15px;
     font-weight: 600;
-    color: #f1f1f1;
+    margin-bottom: 5px;
+    color: #ffffff;
+    text-align: left;
 }
 
 input, select {
     padding: 12px;
     border: none;
     border-radius: 6px;
-    margin-bottom: 12px;
     box-shadow: inset 3px 3px 7px rgba(0, 0, 0, 0.3);
     font-size: 15px;
-    font-weight: 500;
-    color: #000000;
     background: #e8eeda;
+    color: #000;
 }
 
 .btn {
     background: linear-gradient(145deg, #790303, #fa7602);
-    color: rgb(255, 255, 255);
+    color: white;
     border: none;
     padding: 12px;
     border-radius: 6px;
     cursor: pointer;
     font-size: 20px;
-    box-shadow: 3px 3px 7px rgba(0, 0, 0, 0.4);
-    transition: 0.3s;
     font-weight: 600;
-    letter-spacing: 1.2px;
+    letter-spacing: 1px;
+    margin-top: 20px;
+    width: 100%;
+    transition: 0.3s ease;
 }
 
 .btn:hover {
     background: linear-gradient(145deg, #ff6a00, #e65c00);
-    transform: translateY(-3px);
+    transform: translateY(-2px);
 }
 
 .prediction {
     color: #ffa332;
-    margin-top: 18px;
-    font-size: 25px;
+    font-size: 22px;
     font-weight: 700;
-    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.3);
-    letter-spacing: 1.2px;
+    margin-top: 20px;
 }

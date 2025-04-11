@@ -11,49 +11,72 @@
     <div class="container">
         <h1>Predict Placement Model</h1>
         <form action="{{ url_for('predict') }}" method="post">
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="CGPA">Enter your CGPA</label>
+                    <input type="text" name="CGPA" placeholder="e.g., 9.5" required/>
+                </div>
+                <div class="form-group">
+                    <label for="Internships">Enter Number of Internships</label>
+                    <input type="text" name="Internships" placeholder="e.g., 0, 1, 2, 3" required/>
+                </div>
+            </div>
 
-            <label for="CGPA">Enter your CGPA</label>
-            <input type="text" name="CGPA" placeholder="e.g., 9.5" required/>
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="Projects">Enter Number of Projects</label>
+                    <input type="text" name="Projects" placeholder="e.g., 1, 2, 3, 0" required/>
+                </div>
+                <div class="form-group">
+                    <label for="Workshops/Certifications">Workshops/Certifications</label>
+                    <input type="text" name="Workshops/Certifications" placeholder="e.g., 1, 2, 3, 0" required/>
+                </div>
+            </div>
 
-            <label for="Internships">Enter Number of Internships</label>
-            <input type="text" name="Internships" placeholder="e.g., 0, 1, 2, 3" required/>
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="AptitudeTestScore">Aptitude Test Score</label>
+                    <input type="text" name="AptitudeTestScore" placeholder="e.g., 85" required/>
+                </div>
+                <div class="form-group">
+                    <label for="SoftSkillsRating">Soft Skills Rating</label>
+                    <input type="text" name="SoftSkillsRating" placeholder="Out of 5 (e.g., 4.5)" required/>
+                </div>
+            </div>
 
-            <label for="Projects">Enter Number of Projects</label>
-            <input type="text" name="Projects" placeholder="e.g., 1, 2, 3, 0" required/>
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="ExtracurricularActivities">Extracurricular Activities?</label>
+                    <select name="ExtracurricularActivities" required>
+                        <option value="" disabled selected>-- Select --</option>
+                        <option value="Yes">Yes</option>
+                        <option value="No">No</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="PlacementTraining">Placement Training?</label>
+                    <select name="PlacementTraining" required>
+                        <option value="" disabled selected>-- Select --</option>
+                        <option value="Yes">Yes</option>
+                        <option value="No">No</option>
+                    </select>
+                </div>
+            </div>
 
-            <label for="Workshops/Certifications">Enter Number of Workshops/Certifications</label>
-            <input type="text" name="Workshops/Certifications" placeholder="e.g., 1, 2, 3, 0" required/>
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="SSC_Marks">10th Class Marks</label>
+                    <input type="text" name="SSC_Marks" placeholder="Total %" required/>
+                </div>
+                <div class="form-group">
+                    <label for="HSC_Marks">12th Class Marks</label>
+                    <input type="text" name="HSC_Marks" placeholder="Total %" required/>
+                </div>
+            </div>
 
-            <label for="AptitudeTestScore">Enter Aptitude Test Score</label>
-            <input type="text" name="AptitudeTestScore" placeholder="e.g., 85" required/>
-
-            <label for="SoftSkillsRating">Enter Soft Skills Rating</label>
-            <input type="text" name="SoftSkillsRating" placeholder="Out of 5 (e.g., 4.5)" required/>
-
-            <label for="ExtracurricularActivities">Participated in Extracurricular Activities?</label>
-            <select name="ExtracurricularActivities" required>
-                <option value="" disabled selected>-- Select an Option --</option>
-                <option value="Yes">Yes</option>
-                <option value="No">No</option>
-            </select>
-            
-            <label for="PlacementTraining">Attended Placement Training?</label>
-            <select name="PlacementTraining" required>
-                <option value="" disabled selected>-- Select an Option --</option>
-                <option value="Yes">Yes</option>
-                <option value="No">No</option>
-            </select>
-
-            <label for="SSC_Marks">Enter 10th Class Marks</label>
-            <input type="text" name="SSC_Marks" placeholder="Total Percentage" required/>
-
-            <label for="HSC_Marks">Enter 12th Class Marks</label>
-            <input type="text" name="HSC_Marks" placeholder="Total Percentage" required/>
-
-            <br><br>
             <button type="submit" class="btn">Click Predict</button>
+            <h2 class="prediction">{{ prediction }}</h2>
         </form>
-        <h2 class="prediction">{{ prediction }}</h2>
     </div>
 </body>
 </html>
