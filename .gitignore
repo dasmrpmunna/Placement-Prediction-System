@@ -1,1 +1,14 @@
-env
+# Ignore environment folder
+env/
+
+# Ignore python cache
+__pycache__/
+
+# Ignore model files
+*.pkl
+
+# Ignore VS Code settings
+.vscode/
+
+# Ignore OS generated files
+.DS_Store

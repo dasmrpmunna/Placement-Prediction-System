@@ -30,12 +30,26 @@ This project is a machine learning-based web application designed to predict whe
 - 10th Class Marks  
 - 12th Class Marks  
 
+## 🖼️ Screenshots
+
+> Home Page:
+
+![Home Page](images/1.png)
+
+> Prediction Page:
+
+![Prediction Page](images/2.png)
+
+> Output Page:
+
+![Output Page](images/3.png)
+
 ## 🖥️ Running the Project Locally
 
 1. Clone the repo:
     ```bash
-    git clone https://github.com/yourusername/placement-predictor.git
-    cd placement-predictor
+    git clone https://github.com/dasmrpmunna/Placement-Prediction-System.git
+    cd Placement-Prediction-System
     ```
 
 2. Create a virtual environment and activate it:
@@ -58,6 +72,8 @@ This project is a machine learning-based web application designed to predict whe
 5. Open your browser and go to `http://127.0.0.1:5000`
 
 ## 📁 Project Structure
+
+(You can add your folder structure here if you want.)
 
 ## 📄 License
 
