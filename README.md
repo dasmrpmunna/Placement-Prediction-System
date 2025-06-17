@@ -6,7 +6,7 @@ This project is a machine learning-based web application designed to predict whe
 
 - Predicts placement using trained ML model
 - Flask-powered web interface
-- Inputs include CGPA, internships, projects, certifications, aptitude score, soft skills, and more
+- Inputs include CGPA, internships, projects, certifications, aptitude score, soft skills, and more.
 - Responsive UI with clean layout
 
 ## 🚀 Technologies Used
